@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class test
+{
+	// 프로그램 시작
+	public static void main( String[] args )
+	{
+
+                Scanner scan  = new Scanner(System.in);
+                String[] word = new String[ 3 ];
+          
+                for( int index = 0; index < word.length; index++ )
+                {                 
+                      System.out.print("단어를 입력하세요: ");
+                      word[ index ] = scan.nextLine().trim();
+                 }
+               
+                for( int max = word.length - 1; max >= 0; max-- )
+                {
+                    for( int index = 0; index < max; index++ )
+                    {
+                       if( word[ index ].compareTo(word[ index + 1 ]) > 0)
+                       {
+                                String temp = word[ index ];
+                                word[ index ] = word[ index + 1 ];
+                                word[ index + 1 ] = temp;
+                        }
+                     }
+                 }
+                for ( int index = 0; index < word.length; index ++ )
+                {
+                       System.out.println((index + 1)+") " + word[ index ] + " ");
+
+                 }
+		// 프로그램 종료
+		return;
+	}
+}
+ 

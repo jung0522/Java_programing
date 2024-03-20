@@ -1,0 +1,44 @@
+import java.lang.System;
+import java.util.Scanner;
+
+public class JL0110RockPaperScissors 
+{
+
+	public static void main( String[] args ) 
+	{
+		Scanner scan = new Scanner( System.in );
+		String playerA = null;									
+		String playerB = null;									
+
+		System.out.print("A, 가위, 바위, 보 중 하나를 선택하세요.: " );
+		playerA = scan.nextLine().trim(); 						
+		System.out.println( playerA + "를 냈습니다." ); 
+
+		System.out.print("B, 가위, 바위, 보 중 하나를 선택하세요.: " );
+		playerB = scan.nextLine().trim();						
+		System.out.println( playerB + "를 냈습니다." ); 
+
+		if ( playerA.equals( playerB ) )								
+		{
+			System.out.println( "A와 B가 비겼습니다." ); 
+		}
+		else if ( playerA.equals( "가위" ) && playerB.equals( "보" ) )	
+		{	
+			System.out.println( "A가 이겼습니다." ); 
+		}
+		else if ( playerA.equals( "바위" ) && playerB.equals( "가위" ) )	
+		{
+			System.out.println( "A가 이겼습니다." ); 
+		}
+		else if ( playerA.equals( "보" ) && playerB.equals( "바위" ) )	
+		{
+			System.out.println( "A가 이겼습니다." ); 
+		} 
+		else
+		{
+			System.out.println( "B가 이겼습니다." ); 
+		}
+		return;
+	}
+}
+

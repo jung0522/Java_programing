@@ -1,0 +1,16 @@
+package Game;
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+import Game.GameStart;
+
+
+class panel2 extends JPanel {
+
+	
+	public panel2() {
+		setBackground (Color.red);
+		GameStart game new GameStart;
+		
+	}
+}

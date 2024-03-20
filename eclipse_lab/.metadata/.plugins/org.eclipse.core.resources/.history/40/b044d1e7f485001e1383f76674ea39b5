@@ -1,0 +1,69 @@
+import javax.swing.*;
+import java.awt.*;
+
+
+class GameStart extends JPanel {
+
+	public GameStart() {
+		this.setLayout(null);
+	    JButton next = new JButton("Game Start!");
+	 
+
+		setBackground (Color.black);
+		int width = 1320;
+		int height = 750;
+		setPreferredSize (new Dimension(width, height));
+		
+	    ImageIcon background = new ImageIcon ("./src/image/background.jpg");
+	    JLabel Label1 = new JLabel (background);
+	    Label1.setBounds(0, 0, width, height);
+	    add(Label1);
+	   
+	 
+	    ImageIcon graduation = new ImageIcon ("./src/image/Graduation.png");
+	    JLabel Label2 = new JLabel (graduation);
+	    Label2.setBounds(520, 2, 250, 250);
+	    add(Label2);
+	    
+	    ImageIcon ch = new ImageIcon ("./src/image/smu.png");
+	    JLabel Label3 = new JLabel (ch);
+	    Label3.setBounds(800, 200, 250, 250);
+	    add(Label3);
+	    
+	    ImageIcon character = new ImageIcon ("./src/image/≈∏¿Ã∆≤.png");
+	    JLabel Label4 = new JLabel (character);
+	    Label4.setBounds(180, 180, 900, 500);
+	    add(Label4);
+	    
+	    
+	    
+	   
+	   
+		next.setPreferredSize(new Dimension(100, 50));
+		next.setBounds(530, 550, 200, 40);
+		next.setFont(new Font("∏º¿Ω∞ÌµÒ",Font.BOLD,20));
+		
+		add(next);
+	    
+	}
+}
+
+public class Game_Start {
+
+	public static void main(String[] args) {
+      
+		JFrame frame = new JFrame("¡πæ˜¿Â¿ª √£æ∆∂Û");
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		GameStart panel = new GameStart();
+		
+		frame.getContentPane().add(panel);
+		
+		
+
+        
+		frame.pack();
+		frame.setVisible(true);
+	}
+
+}

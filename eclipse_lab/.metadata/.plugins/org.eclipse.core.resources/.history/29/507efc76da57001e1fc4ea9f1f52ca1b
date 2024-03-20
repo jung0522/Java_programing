@@ -1,0 +1,16 @@
+
+public class Main
+{
+	
+	public static void main(String[] args)
+	{
+		int a = 2;
+		int b = 3;
+	    System.out.println("안녕"+a*b); //자바에서 문자열+숫자는 문자로 인식
+	    
+	    double c = 134.52450434;
+	    System.out.printf("%f\n", c); // 소수점 6자리가지
+	    System.out.printf("%4.2f\n", c); // 소수점 2자리가지
+	    
+	}
+}

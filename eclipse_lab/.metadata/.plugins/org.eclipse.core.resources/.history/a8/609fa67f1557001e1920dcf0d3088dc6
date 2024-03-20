@@ -1,0 +1,11 @@
+import java.lang.System;												
+
+public class JL0101Welcome	
+{
+	public static void main( String[] args )  								
+	{
+		System.out.println( "JAVA 수업에 오신 여러분 환영합니다.");	
+		
+		return;					
+	}
+}

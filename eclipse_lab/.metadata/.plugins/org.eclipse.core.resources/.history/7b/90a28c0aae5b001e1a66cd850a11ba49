@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class test
+{
+	// 프로그램 시작
+	public static void main( String[] args )
+	{
+                Scanner scan = new Scanner(System.in);
+                String[][] dialogue = {{"이름이 뭐", "난 재석이야. 국민mc 유재석과 이름이 같아. ㅎㅎㅎ 넌 몇 살이니?"},{"몇 살", "난 20살이야. 남들이 다 부러워하는 나이지. 넌 어디 살아?"},
+  {"어디 살", "난 홍지동 살아. 북한산 아래 있어서 공기가 무지 맑아.ㅎㅎㅎ 취미가 뭐니?"},
+  {"만나서 반가", "나도 반가워 친하게 지내자"}};
+
+                System.out.print("[시스템] 안녕? 넌 이름이 모야?\n 사용자: ");
+                while(true)
+                {
+                       String input = scan.nextLine();
+ 
+                       if (input.contains("바이") == true)
+                       {
+                               System.out.println("[시스템] 그래 안녕! 담에 또 봐\n");
+                               break;
+                       }
+                       int index = 0;
+                       for ( index = 0; index < 4; index++ )
+                       {
+                            if ( input.contains(dialogue[index][0]) == true )
+                             {
+                                    System.out.print("[시스템]" + dialogue[index][1] + \n 사용자: ");
+                                    break;
+
+                        if ( index == 4 )
+                        {
+                                    System.out.print("[시스템] 뭐 딴 거 재밌는 거 없을까?\n 사용자: ");
+                         }
+		// 프로그램 종료              
+		return;
+	}
+}
+                
+ 

@@ -1,0 +1,37 @@
+import java.util.*;
+
+public class test
+{
+	// 프로그램 시작
+	public static void main( String[] args )
+	{
+               String[] word = {"apple", "banana", "carrot"};
+                   
+               try
+               {
+               
+                    for(int index = 0; index <= word.length; index++)
+                     {
+                                 System.out.println((index + 1) + ") " +word[index]+ " ");
+                      }
+               }
+             
+               catch( ArrayIndexOutOfBoundsException e)
+               {
+                   System.out.println("\n배열 허용 범위 초과");
+               }
+              try
+              {
+                   word = null;
+                   System.out.println( word[0]);
+               }
+               catch (NullPointerException e)
+               {
+                   System.out.println("빈 객체 접근 오류");
+               }
+             
+		// 프로그램 종료
+		return;
+	}
+}
+ 

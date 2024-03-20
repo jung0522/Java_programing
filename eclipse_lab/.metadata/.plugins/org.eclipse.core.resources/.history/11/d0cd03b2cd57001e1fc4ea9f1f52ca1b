@@ -1,0 +1,12 @@
+
+public class Main
+{
+	
+	public static void main(String[] args)
+	{
+		long a = 2;
+		long b = 3;
+	    System.out.println(a+b);
+	    
+	}
+}
